@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ProjectBenja_Recetario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- logo y menús -->
+    <nav class="top-header">
+      <!-- cambio -->
+      <a href="" class="logo">
+        <img height="50" width="50" src="imagenes/logo.ihc.jpg" alt="Logo" />
+      </a>
+      <!-- cambio, también se agregaron los <a href> que sirven para la manita -->
+      <ul class="menu-horizontal">
+        <li><a href="">productos</a></li>
+        <li>
+          <a href="">soluciones</a>
+          <ul class="menu-vertical">
+            <li><a href="">Recetas</a></li>
+            <li><a href="">Banca internet</a></li>
+            <li><a href="">Yape</a></li>
+            <li><a href="">Cocos y Lucas</a></li>
+          </ul>
+        </li>
+        <li><a href="">beneficios</a></li>
+        <li><a href="">ayuda</a></li>
+      </ul>
+    </nav>
+
+    <!-- cambio -->
+    <section class="seccion-productos">
+      <div class="cont-gral-productos">
+        <div class="cont-prod-texto">
+          <h2>El placer de disfrutar la comida</h2>
+          <p>
+            Ésta vez les comparto una receta muy fácil de hacer y muy nutritiva.
+            El chaufa normalmente lo conocemos con arroz pero con quinua también
+            queda delicioso, es una buena forma de variar un poco el menú de la
+            semana. Como siempre digo, pueden elegir entre las verduras que
+            prefieran sus hijos.
+          </p>
+        </div>
+        <div class="cont-prod-imagen">
+          <img src="imagenes/imagen.ihc2.jpg" alt="Receta destacada" />
+        </div>
+      </div>
+    </section>
+
+    <!-- sección beneficios -->
+    <section class="seccion-beneficios">
+      <div class="cont-gral-beneficios">
+        <div class="cont-benef-texto">
+          <h2>Sección Beneficios</h2>
+          <p>
+            Ésta vez les comparto una receta muy fácil de hacer y muy nutritiva.
+            El chaufa normalmente lo conocemos con arroz pero con quinua también
+            queda delicioso, es una buena forma de variar un poco el menú de la
+            semana. Como siempre digo, pueden elegir entre las verduras que
+            prefieran sus hijos.
+          </p>
+        </div>
+        <div class="cont-benef-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/l6wFdgpT6sc?si=LWMyciPyr7su8Yz0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- sección contáctanos -->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+
+        <form action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombres completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="pais">pais:</label>
+            <select id="pais" name="pais">
+              <option value="" disabled selected>seleccione un pais</option>
+              <option value="Peru">Peru</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+          </div>
+
+          <!-- checkbox -->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="tecnologia" />
+                  Tecnología</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="educacion" />
+                  Educación</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="deporte" />
+                  Deporte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="arte" />
+                  Arte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="ciencia" />
+                  Ciencia</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- radio-button -->
+          <fieldset class="campo">
+            <legend>Sexo:</legend>
+            <ul class="lista-radio">
+              <li>
+                <input
+                  type="radio"
+                  id="genero-m"
+                  name="genero"
+                  value="masculino"
+                />
+                <label for="genero-m">Masculino</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="genero-f"
+                  name="genero"
+                  value="femenino"
+                />
+                <label for="genero-f">Femenino</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- pie de pagina-->
+<!-- Enlaces legales -->
+<div class="footer-links">
+  <h4>Legal</h4>
+  <a href="https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733" target ="blank">
+    Política de Privacidad</a>
+  <!-- Dentro de href llama a un documento pdf con la poltica-->
+  <a href="https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733" target ="blank"">
+    Términos y Condiciones</a>
+  <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+  <a href="https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/243470-29733" target ="blank">
+    Protección de Datos</a>
+</div>
+
+<!-- Redes sociales con íconos personalizados -->
+<div class="footer-social">
+  <h4>Síguenos</h4>
+  <a href="https://www.facebook.com/recetas"target ="blank">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+      
+      alt="Facebook"
+      class="social-icon"
+  /></a>
+  <a href="https://www.instagram.com/" target ="blank"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+      alt="Instagram"
+      class="social-icon"
+  /></a>
+  <a href="https://pe.linkedin.com/" target = "blank"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+      alt="LinkedIn"
+      class="social-icon"
+  /></a>
+  <a href="https://x.com/?lang=es" target ="blank"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+      alt="Twitter"
+      class="social-icon"
+  /></a>
+</div>
+</div>
+</footer>
+</section>
+
+
+
+    <!--pie de pagina-->
+  </body>
+</html>
